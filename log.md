@@ -1,30 +1,22 @@
 # 100 Days Of Code - Log
+### Proposed Plan
+* Implement graph-based solver in my [personal project](https://github.com/jwdinius/nmsac)
+* Contribute to [navigation2](https://github.com/ros-planning/navigation2)
+* (more to come)
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
+### Day 1: July 26, Sunday
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**:
+* Committed to the challenge.
+* Worked through an issue with pybind11 modules:  _I passed numpy arrays to my function interface by using index slicing (i.e. array[:3, :]).  Long story short: the c++ runtime did not like this!  I found a workaround by just using numpy.copy to create a new copy of the original array, with the desired index range._
+* Pushed two commits to https://github.com/jwdinius/nmsac: got python bindings to work (with pybind11 and some mods to a lib called carma)
+* resurrected a handy build-all script and it made example reproduction a snap!
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link to work:** [Calculator App](http://www.example.com)
-
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
-
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
-
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link(s) to work**: [Calculator App](http://www.example.com)
-
-
-### Day 1: June 27, Monday
-
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
-
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
+**Thoughts** pybind11 shows a lot of nice improvements over Boost.Python.  Namely,
+* wrapping functions is a snap:  I didn't even have to export argument type etc... in the construction of the pybind11 module
+* wrapping structured data types was as thin as could be hoped for.  With Boost.Python, I recall having to create a child class or custom class that wrapped the original struct/class, but pybind11 allows for exposing the data directly.  Super cool!
+* working with numpy arrays going from python-to-c++ is so easy!
+It's not all sunshines and gumdrops though, it took me most of yesterday to get up-and-running.  I'm excited to use this more though!
 
 **Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+1. [Pull request](https://github.com/jwdinius/nmsac/pull/8) - check the commits, yo
