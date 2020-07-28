@@ -20,3 +20,16 @@ It's not all sunshines and gumdrops though, it took me most of yesterday to get 
 
 **Link(s) to work**
 1. [Pull request](https://github.com/jwdinius/nmsac/pull/8) - check the commits, yo
+
+### Day 2: July 27, Monday
+
+**Today's Progress**:
+* Updated documentation in my personal project and tagged a new release
+* Got my git on - lots of rebasing, squashes, and release tagging.
+
+**Thoughts**
+My git was pretty rusty, so I'm glad I got to circle back and revisit some of these skills.  I didn't get much coding done today, but I really wanted to resolve an outstanding issue that I had been meaning to get to for awhile now.  I feel like I can move on to the more exciting dev tasks I have lined up over the next few weeks.  Documentation is an oft-neglected aspect of good software development, so I feel justified in using this time towards 100 Days of Code.
+
+**Link(s) to work**
+1. [Pull request](https://github.com/jwdinius/nmsac/pull/6) - _this references the actual documentation commit_
+2. [tagged release v0.2.0](https://github.com/jwdinius/nmsac/pull/6)
