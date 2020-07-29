@@ -2,6 +2,8 @@
 ### Proposed Plan
 * Implement graph-based solver in my [personal project](https://github.com/jwdinius/nmsac)
 * Contribute to [navigation2](https://github.com/ros-planning/navigation2)
+* Contribute to [ros2 middleware project](https://github.com/ros2/rmw)
+* Understand, and develop models/implementations for, biologically-inspired vision
 * (more to come)
 
 ### Day 1: July 26, Sunday
@@ -33,3 +35,25 @@ My git was pretty rusty, so I'm glad I got to circle back and revisit some of th
 **Link(s) to work**
 1. [Pull request](https://github.com/jwdinius/nmsac/pull/6) - _this references the actual documentation commit_
 2. [tagged release v0.2.0](https://github.com/jwdinius/nmsac/pull/6)
+
+### Day 3: July 28, Tuesday
+
+**Today's Progress**:
+* Read first chapter in [this book](https://www.amazon.com/Understanding-Vision-Theory-Models-Data/dp/0198829361)
+
+**Thoughts**
+I spent most of the day working through a frustrating dev issue with some software I was writing.  I just didn't have the energy to code anymore after finishing work for the day.  The compromise I reached was to read a reference that helps me to understand physiologically visual perception.
+
+**Link(s) to work**
+_none today_
+
+### Day 4: July 29, Wednesday
+
+**Today's Progress**:
+* Attended first RMW middleware working group (kick-off)
+
+**Thoughts**
+For me, 100DaysOfCode is about more than just banging out code.  I want to spur myself on to contributing more to open source projects; ros-based projects in particular.  Committing to 100DaysOfCode made getting out of my comfort zone and attending the working group meeting easier for me.
+
+**Link(s) to work**
+1. [meeting notes](https://docs.google.com/document/d/1pdPdcBk2YcR0IpmslDN07WGbhNU3WIaz-UBh2sDW_P0/edit#heading=h.cj1akj1l2p2i)
