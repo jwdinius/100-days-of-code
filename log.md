@@ -57,3 +57,55 @@ For me, 100DaysOfCode is about more than just banging out code.  I want to spur 
 
 **Link(s) to work**
 1. [meeting notes](https://docs.google.com/document/d/1pdPdcBk2YcR0IpmslDN07WGbhNU3WIaz-UBh2sDW_P0/edit#heading=h.cj1akj1l2p2i)
+
+### Day 5: July 30, Thursday
+
+**Today's Progress**:
+* none, due to a technical issue
+
+**Thoughts**
+We have been having a heatwave in SoCal and a brownout resulted in my display getting messed up on my workstation.  I spent today's time trying to get it up-and-going again, with not luck in Linux.  Fortunately, I have dual boot with Windows 10, so I was able to verify that my Nvidia card was still functional via by updating the driver, restarting, and looking at the the Nvidia Control Panel.
+
+**Link(s) to work**
+_N/A_
+
+### Day 6: July 31, Friday
+
+**Today's Progress**:
+* Fixed Nvidia Linux graphics driver on my workstation
+
+**Thoughts**
+This issue blew away all available time I had for side projects, but now I have a functional workstation again.  Before committing to the 100 Days Of Code, I would have probably let this issue sit for multiple days (or weeks).  Having made the commitment, I resolved the issue much more quickly and I am happier for it.
+
+**Link(s) to work**
+_N/A
+
+### Day 7: August 1, Saturday
+
+**Today's Progress**:
+* Worked through [Fast DDS docs](https://fast-dds.docs.eprosima.com/en/latest/)
+
+**Thoughts**
+This is a combination of work and play for me:  I really want to understand networking stacks for robotics much better, both for personal and professional gain, so I went through the verbose documentation, example code, and tried to identify configuration properties for shuttling large datastreams (like camera images) between publishers and subscribers.
+
+**Link(s) to work**
+I was able to nail down 4 key components with configurable properties for modifying Quality-of-Service in Fast DDS:
+* DomainParticipantQos
+* TopicQos
+* Publisher(Subscriber)Qos
+* DataWriter(Reader)Qos
+
+### Day 8: August 2, Sunday
+
+**Today's Progress**:
+Resolved 3 issues in my personal [project](https://github.com/jwdinius/nmsac)
+* Reconsidered potential change; I looked at my implementation, the scope of the pull request, and decided to close the issue
+* Added conditional generators to allow CMake to setup desired build steps at configure-time
+* Add continuous integration (including README badge)
+
+**Thoughts**
+I had been putting off these, let's call them, "niceties" because I wasn't sure of the amount of work that would be required.  For the conditional generator work, I hadn't used this feature in CMake >3.0 before and the documentation I found made it look pretty daunting.  Fortunately, though, I found the book Professional CMake, and the examples presented in that book were really helpful!  Similarly, for the CircleCI integration, I haven't had to setup anything similar for quite awhile; I had setup a travis ci job in the past, and CircleCI looked kind of similar.  I was glad to see that, following the reference from [nlohmann::json](https://github.com/nlohmann/json) (one of my favorite libraries to use as a reference), setting up a CircleCI pipeline was really easy.  _I was even able to use my development docker image as a base for the CircleCI container!_
+
+**Link(s) to work**
+1. https://github.com/jwdinius/nmsac/pull/10
+2. https://github.com/jwdinius/nmsac/pull/12
